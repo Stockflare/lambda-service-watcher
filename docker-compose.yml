@@ -1,0 +1,6 @@
+watcher:
+  build: .
+  volumes:
+    - .:/lambda-watcher
+  # env_file:
+  #   - ./.env

@@ -1,0 +1,16 @@
+{
+  "RequestType": "Create",
+  "RequestId": "123456",
+  "ResponseURL": "pre-signed-url-for-create-response",
+  "ResourceType": "Custom::Scheduler",
+  "LogicalResourceId": "123456",
+  "StackId": "arn:aws:cloudformation:us-east-1:namespace:stack/stack-name/guid",
+  "ResourceProperties": {
+    "Table" : "TestServiceWatcherTable",
+    "Region" : "us-east-1",
+    "ServiceWatcher" : {
+      "URL" : "http://example.com/count",
+      "MetricName" : "TestMetricName"
+    }
+  }
+}
