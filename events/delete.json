@@ -4,7 +4,7 @@
   "ResponseURL": "pre-signed-url-for-create-response",
   "ResourceType": "Custom::Scheduler",
   "LogicalResourceId": "123456",
-  "PhysicalResourceId" : "afec877b-c53b-4999-9c11-68e84dca94b1",
+  "PhysicalResourceId" : "c56bb878-4981-4b88-bcd3-90d9f07c96d7",
   "StackId": "arn:aws:cloudformation:us-east-1:namespace:stack/stack-name/guid",
   "ResourceProperties": {
     "Table" : "TestServiceWatcherTable",

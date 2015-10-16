@@ -115,7 +115,22 @@ exports.handler = function(event, context) {
 
 
   var isWatcherValid = function(props, request_type) {
-
+    if (request_type != "Delete") {
+      if (_.isUndefined(props.ServiceWatcher)) {
+        return [false, "ServiceWatcher has not been provided"];
+      } else {
+        var service_watcher = props.ServiceWatcher;
+        if (_.isUndefined(service_watcher.URL)) {
+          return [false, "URL must be provided"];
+        }
+        if (_.isUndefined(service_watcher.MetricName)) {
+          return [false, "MetricName must be provided"];
+        }
+        if (_.isUndefined(service_watcher.Namespace)) {
+          return [false, "Namespace must be provided"];
+        }
+      }
+    }
     return [true, ''];
   };
 

@@ -10,7 +10,8 @@
     "Region" : "us-east-1",
     "ServiceWatcher" : {
       "URL" : "http://example.com/count",
-      "MetricName" : "TestMetricName"
+      "MetricName" : "TestMetricName",
+      "Namespace": "TestNameSpace"
     }
   }
 }
